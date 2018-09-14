@@ -1,0 +1,31 @@
+<div>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">AR Nexgen</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/health']" >Health</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/logs']" >Logs</a>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <!-- Search form -->
+    </links>
+    <!-- Collapsible content -->
+
+  </mdb-navbar>
+  <!--/.Navbar-->
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
